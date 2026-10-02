@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import { formatMoney } from "../../utils/money";
-export function deliveryOption( {cartItem, deliveryOptions }) {
+export function DeliveryOptions( {cartItem, deliveryOptions }) {
     return (
         <>
          <div className="delivery-options">
