@@ -1,7 +1,15 @@
 import './Header.css';
 import {Link} from 'react-router';
+type HeaderProps ={
+   cart: {
+    productId: string;
+    quantity: number;
+    deliveryOptionId: string;
+  }[];
 
-export function Header({cart}) {
+}
+
+export function Header({cart}: HeaderProps) {
   let totalQuantity = 0;
 
   cart.forEach((cartItem)=>{
